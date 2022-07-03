@@ -1,4 +1,12 @@
 {
   "item.fabrique.raw_tanzanite": "Raw Tanzanite",
-  "item.fabrique.tanzanite": "Tanzanite"
+  "item.fabrique.tanzanite": "Tanzanite",
+
+  "block.fabrique.tanzanite_block": "Tanzanite Block",
+  "block.fabrique.tanzanite_ore": "Tanzanite Ore",
+  "block.fabrique.deepslate_tanzanite_ore": "Deepslate Tanzanite Ore",
+  "block.fabrique.netherrack_tanzanite_ore": "Netherrack Tanzanite Ore",
+  "block.fabrique.endstone_tanzanite_ore": "Endstone Tanzanite Ore",
+
+  "itemGroup.fabrique.tanzanite": "Tanzanite Tab"
 }
