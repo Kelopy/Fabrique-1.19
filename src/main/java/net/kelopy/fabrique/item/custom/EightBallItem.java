@@ -10,6 +10,7 @@ import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 
 public class EightBallItem extends Item {
+
     public EightBallItem(Settings settings){
         super(settings);
     }

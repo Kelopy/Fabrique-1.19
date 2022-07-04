@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model":  "fabrique:block/jumpy_block" }
+  }
+}
