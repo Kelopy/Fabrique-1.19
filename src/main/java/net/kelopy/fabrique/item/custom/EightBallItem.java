@@ -48,7 +48,7 @@ public class EightBallItem extends Item {
 
     private void outputRandomNumber(PlayerEntity player){
         int num = getRandomNumber();
-        player.sendMessage(Text.literal("§7You Rolled §b" + num));
+        player.sendMessage(Text.literal("§7You Rolled a §b" + num));
 
         if(num == 5){
             player.sendMessage(Text.literal("§b§lCONGRATS YOU ROLLED A 5"));

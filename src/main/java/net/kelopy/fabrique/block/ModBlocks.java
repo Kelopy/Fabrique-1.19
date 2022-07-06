@@ -3,10 +3,12 @@ package net.kelopy.fabrique.block;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.kelopy.fabrique.FabriqueMod;
+import net.kelopy.fabrique.block.custom.EggplantCropBlock;
 import net.kelopy.fabrique.block.custom.JumpyBlock;
 import net.kelopy.fabrique.block.custom.TanzaniteLampBlock;
 import net.kelopy.fabrique.item.ModItemGroup;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
 import net.minecraft.item.BlockItem;
@@ -43,6 +45,13 @@ public class ModBlocks {
     public static final Block TANZANITE_LAMP = registerBlock("tanzanite_lamp",
             new TanzaniteLampBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
                     .luminance(state -> state.get(TanzaniteLampBlock.LIT) ? 15 : 0)), ModItemGroup.TANZANITE);
+
+    public static final Block EGGPLANT_CROP = registerBlockWithoutItem("eggplant_crop",
+            new EggplantCropBlock(FabricBlockSettings.copy(Blocks.WHEAT)));
+
+    private static Block registerBlockWithoutItem(String name, Block block){
+        return Registry.register(Registry.BLOCK, new Identifier(FabriqueMod.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block, ItemGroup tab){
         registerBlockItem(name, block, tab);
