@@ -14,5 +14,7 @@
   "block.fabrique.tanzanite_lamp": "Tanzanite Lamp",
   "block.fabrique.eggplant_crop": "Eggplant Crop",
 
+  "entity.minecraft.villager.jump_master": "Jump Master",
+
   "itemGroup.fabrique.tanzanite": "Tanzanite Tab"
 }
