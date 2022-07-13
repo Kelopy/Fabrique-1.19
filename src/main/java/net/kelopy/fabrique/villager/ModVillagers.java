@@ -42,13 +42,11 @@ public class ModVillagers {
 
     public static void registerTrades(){
         TradeOfferHelper.registerVillagerOffers(JUMP_MASTER, 1,
-                factories -> {
-                    factories.add(((entity, random) -> new TradeOffer(
-                        new ItemStack(ModItems.TANZANITE, 3),
-                        new ItemStack(ModItems.EGGPLANT, 5),
-                            6, 2, 0.02f
-                    )));
-                });
+                factories -> factories.add(((entity, random) -> new TradeOffer(
+                    new ItemStack(ModItems.TANZANITE, 3),
+                    new ItemStack(ModItems.EGGPLANT, 5),
+                        6, 2, 0.02f
+                ))));
     }
 
 }

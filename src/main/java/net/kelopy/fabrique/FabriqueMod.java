@@ -3,6 +3,7 @@ package net.kelopy.fabrique;
 import net.fabricmc.api.ModInitializer;
 import net.kelopy.fabrique.block.ModBlocks;
 import net.kelopy.fabrique.item.ModItems;
+import net.kelopy.fabrique.painting.ModPaintings;
 import net.kelopy.fabrique.villager.ModVillagers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class FabriqueMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
+        ModPaintings.registerPaintings();
 	}
 
 }
