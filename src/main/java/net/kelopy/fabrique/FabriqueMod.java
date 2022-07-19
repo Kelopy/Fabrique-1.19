@@ -5,6 +5,8 @@ import net.kelopy.fabrique.block.ModBlocks;
 import net.kelopy.fabrique.item.ModItems;
 import net.kelopy.fabrique.painting.ModPaintings;
 import net.kelopy.fabrique.villager.ModVillagers;
+import net.kelopy.fabrique.world.feature.ModConfiguredFeatures;
+import net.kelopy.fabrique.world.gen.ModOreGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +17,9 @@ public class FabriqueMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+        ModConfiguredFeatures.registerConfiguredFeatures();
+		ModOreGeneration.generateOres();
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModVillagers.registerVillagers();
