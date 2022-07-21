@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 import net.kelopy.fabrique.block.ModBlocks;
 import net.kelopy.fabrique.item.ModItems;
 import net.kelopy.fabrique.painting.ModPaintings;
+import net.kelopy.fabrique.util.ModLootTableModifiers;
 import net.kelopy.fabrique.villager.ModVillagers;
 import net.kelopy.fabrique.world.feature.ModConfiguredFeatures;
 import net.kelopy.fabrique.world.gen.ModOreGeneration;
@@ -19,12 +20,12 @@ public class FabriqueMod implements ModInitializer {
 	public void onInitialize() {
         ModConfiguredFeatures.registerConfiguredFeatures();
 		ModOreGeneration.generateOres();
-
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModVillagers.registerVillagers();
         ModVillagers.registerTrades();
         ModPaintings.registerPaintings();
+        ModLootTableModifiers.modifyLootTables();
 	}
 
 }
